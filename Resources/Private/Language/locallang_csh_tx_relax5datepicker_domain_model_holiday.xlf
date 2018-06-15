@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-02-07T18:15:18Z" product-name="relax5datepicker">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="day.description">
+				<source>Day</source>
+			</trans-unit>
+			<trans-unit id="month.description">
+				<source>month</source>
+			</trans-unit>
+			<trans-unit id="year.description">
+				<source>year</source>
+			</trans-unit>
+			<trans-unit id="origin.description">
+				<source>origin</source>
+			</trans-unit>
+			<trans-unit id="offset.description">
+				<source>offset</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

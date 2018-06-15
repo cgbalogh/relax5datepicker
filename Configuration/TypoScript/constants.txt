@@ -1,0 +1,15 @@
+
+plugin.tx_relax5datepicker_holiday {
+	view {
+		# cat=plugin.tx_relax5datepicker_holiday/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:relax5datepicker/Resources/Private/Templates/
+		# cat=plugin.tx_relax5datepicker_holiday/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:relax5datepicker/Resources/Private/Partials/
+		# cat=plugin.tx_relax5datepicker_holiday/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:relax5datepicker/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_relax5datepicker_holiday//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

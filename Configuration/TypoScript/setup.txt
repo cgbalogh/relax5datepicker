@@ -1,0 +1,64 @@
+
+plugin.tx_relax5datepicker_holiday {
+	view {
+		templateRootPaths.0 = {$plugin.tx_relax5datepicker_holiday.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_relax5datepicker_holiday.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_relax5datepicker_holiday.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_relax5datepicker_holiday.persistence.storagePid}
+	}
+}
+
+plugin.tx_relax5datepicker._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-relax5datepicker table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-relax5datepicker table th {
+		font-weight:bold;
+	}
+
+	.tx-relax5datepicker table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+
+# include JS for wrapper functions
+page.includeJSFooter {
+	relax5datepickerJS = EXT:relax5datepicker/Resources/Public/Scripts/relax5datepicker.js
+    relax5datetimepickerJS = EXT:relax5datepicker/Resources/Public/Scripts/jquery-ui-timepicker-addon.js
+    forceOnTop = 0
+}
+
+page.includeCSS {
+   relax5datepickerCss = EXT:relax5datepicker/Resources/Public/Styles/relax5datepicker.css
+}
+relax5datepicker = COA
+relax5datepicker {
+     15 < tt_content.list.20.relax5datepicker_holiday
+}
+
+page.1999 < relax5datepicker
